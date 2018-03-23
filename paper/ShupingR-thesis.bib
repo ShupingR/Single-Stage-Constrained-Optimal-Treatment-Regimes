@@ -1,6 +1,7 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @comment{model}
 @article{odemodel,
-	author = {Zhao, Yufan and Kosorok, Michael R and Zeng, Donglin},
+	author = {Zhao, Yufan and Kosorok, Michael R. and Zeng, Donglin},
 	doi = {10.1002/sim.3720.Reinforcement},
 	file = {:Users/shuping.ruan/Dropbox/rldm/reference/main-ref/sim-model.pdf:pdf},
 	issn = {1097-0258},
@@ -14,10 +15,11 @@
 	volume = {28},
 	year = {2010}
 }
-@comment{policy evaluation}
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@comment{policy evaluation, lpsi}
 @article{Lagoudakis2003,
 	abstract = {We propose a new approach to reinforcement learning for control problems which com- bines value-function approximation with linear architectures and approximate policy iter- ation. This new approach is motivated by the least-squares temporal-difference learning algorithm (LSTD) for prediction problems, which is known for its efficient use of sample experiences compared to pure temporal-difference algorithms. Heretofore, LSTD has not had a straightforward application to control problems mainly because LSTD learns the state value function of a fixed policy which cannot be used for action selection and control without a model of the underlying process. Our new algorithm, least-squares policy itera- tion (LSPI), learns the state-action value function which allows for action selection without a model and for incremental policy improvement within a policy-iteration framework. LSPI is a model-free, off-policy method which can use efficiently (and reuse in each iteration) sample experiences collected in any manner. By separating the sample collection method, the choice of the linear approximation architecture, and the solution method, LSPI allows for focused attention on the distinct elements that contribute to practical reinforcement learning. LSPI is tested on the simple task of balancing an inverted pendulum and the harder task of balancing and riding a bicycle to a target location. In both cases, LSPI learns to control the pendulum or the bicycle by merely observing a relatively small number of trials where actions are selected randomly. LSPI is also compared against Q-learning (both with and without experience replay) using the same value function architecture. While LSPI achieves good performance fairly consistently on the difficult bicycle task, Q-learning variants were rarely able to balance for more than a small fraction of the time needed to reach the target location.},
-	author = {Lagoudakis, Michail G and Parr, Ronald},
+	author = {Lagoudakis, Michail G. and Parr, Ronald},
 	doi = {10.1162/jmlr.2003.4.6.1107},
 	isbn = {1532-4435},
 	issn = {15324435},
@@ -31,7 +33,7 @@
 }
 @inproceedings{Lagoudakis2001,
 	abstract = {We propose a new approach to reinforcement learning which combines least squares function approximation with policy iteration. Our method is model-free and completely off policy. We are motivated by the least squares temporal difference learning algorithm (LSTD), which is known for its efficient use of sample experiences compared to pure temporal difference algorithms. LSTD is ideal for prediction problems, however it heretofore has not had a straightforward application to control problems. Moreover, approximations learned by LSTD are strongly influenced by the visitation distribution over states. Our new algorithm, Least Squares Policy Iteration (LSPI) addresses these issues. The result is an off-policy method which can use (or reuse) data collected from any source. We have tested LSPI on several problems, including a bicycle simulator in which it learns to guide the bicycle to a goal efficiently by merely observing a relatively small number of completely random trials.},
-	author = {Lagoudakis, Michail G and Parr, Ronald},
+	author = {Lagoudakis, Michail G. and Parr, Ronald},
 	booktitle = {Advances in Neural Information Processing Systems 14 (NIPS 2001)},
 	issn = {1049-5258},
 	keywords = { LSQ,LSPI},
@@ -39,6 +41,7 @@
 	title = {{Model-Free Least-Squares Policy Iteration}},
 	year = {2001}
 }
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @comment{interior-poin}
 @article{Byrd1999,
 	abstract = {The design and implementation of a new algorithm for solving large nonlinear programming problems is described. It follows a barrier approach that employs sequential quadratic programming and trust regions to solve the subproblems occurring in the iteration. Both primal and primal-dual versions of the algorithm are developed, and their performance is illustrated in a set of numerical tests.},
@@ -56,7 +59,7 @@
 	year = {1999}
 }
 @article{Waltz2006,
-	abstract = {Aninterior-point method for nonlinear programming is presented. It enjoys the flexibility of switch- ing between a line search method that computes steps by factoring the primal-dual equations and a trust region method that uses a conjugate gradient iteration. Steps computed by direct factorization are always tried first, but if they are deemed ineffective, a trust region iteration that guarantees progress toward stationarity is invoked. To demonstrate its effectiveness, the algorithm is implemented in the Knitro 6, 28 software package and is extensively tested on a wide selection of test problems.},
+	abstract = {An interior-point method for nonlinear programming is presented. It enjoys the flexibility of switch- ing between a line search method that computes steps by factoring the primal-dual equations and a trust region method that uses a conjugate gradient iteration. Steps computed by direct factorization are always tried first, but if they are deemed ineffective, a trust region iteration that guarantees progress toward stationarity is invoked. To demonstrate its effectiveness, the algorithm is implemented in the Knitro 6, 28 software package and is extensively tested on a wide selection of test problems.},
 	author = {Waltz, R. A. and Morales, J. L. and Nocedal, J. and Orban, D.},
 	doi = {10.1007/s10107-004-0560-5},
 	isbn = {1010700405},
@@ -84,36 +87,25 @@
 	volume = {44},
 	year = {2002}
 }
-@book{Forsgren2002,
-	abstract = {Interior methods are an omnipresent, conspicuous feature of the constrained optimiza- tion landscape today, but it was not always so. Primarily in the form of barrier methods, interior-point techniques were popular during the 1960s for solving nonlinearly constrained problems. However, their use for linear programming was not even contemplated because of the total dominance of the simplex method. Vague but continuing anxiety about barrier methods eventually led to their abandonment in favor of newly emerging, apparently more efficient alternatives such as augmented Lagrangian and sequential quadratic programming methods. By the early 1980s, barrier methods were almost without exception regarded as a closed chapter in the history of optimization. This picture changed dramatically with Karmarkar's widely publicized announcement in 1984 of a fast polynomial-time interior method for linear programming; in 1985, a formal connection was established between his method and classical barrier methods. Since then, interior methods have advanced so far, so fast, that their influence has transformed both the theory and practice of constrained optimization. This article provides a condensed, se- lective look at classical material and recent research about interior methods for nonlinearly constrained optimization.},
-	author = {Forsgren, Anders and Gill, PE and Wright, MH},
-	booktitle = {Society for Industrial and Applied Mathematics (SIAM Review)},
-	doi = {10.1137/S0036144502414942},
-	isbn = {0036144502414},
-	issn = {0036-1445},
-	keywords = {barrier methods,constrained minimization,interior methods,nonlinear constraints,nonlinear programming,penalty methods,primal-dual methods},
-	mendeley-groups = {Current},
-	number = {4},
-	pages = {525--597},
-	title = {{Interior Methods for Nonlinear Optimization}},
-	url = {http://epubs.siam.org/doi/abs/10.1137/S0036144502414942},
-	volume = {44},
-	year = {2002}
+@book{fiacco,
+	author = {Anthony V. Fiacco, Garth P. McCormick},
+	title = {Nonlinear Programming: Sequential Unconstrained Minimization Techniques},
 }
-@article{Rubin2005,
-	abstract = {Causal effects are defined as comparisons of potential outcomes under different treatments on a common set of units. Observed values of the potential outcomes are revealed by the assignment mechanism?a probabilistic model for the treatment each unit receives as a function of covariates and potential outcomes. Fisher made tremendous contributions to causal inference through his work on the design of randomized experiments, but the potential outcomes perspective applies to other complex experiments and nonrandomized studies as well. As noted by Kempthorne in his 1976 discussion of Savage's Fisher lecture, Fisher never bridged his work on experimental design and his work on parametric modeling, a bridge that appears nearly automatic with an appropriate view of the potential outcomes framework, where the potential outcomes and covariates are given a Bayesian distribution to complete the model specification. Also, this framework crisply separates scientific inference for causal effects and decisions based on such inference, a distinction evident in Fisher's discussion of tests of significance versus tests in an accept/reject framework. But Fisher never used the potential outcomes framework, originally proposed by Neyman in the context of randomized experiments, and as a result he provided generally flawed advice concerning the use of the analysis of covariance to adjust for posttreatment concomitants in randomized trials.},
-	author = {Rubin, Donald B.},
-	doi = {10.1198/01621450400000188O},
-	isbn = {01621459},
-	issn = {0162-1459},
-	journal = {Journal of the American Statistical Association},
-	keywords = {Analysis fo covariance,Baysian inference,Fieller-Creasy,Fischer,Neyman,Observational studies,Principle stratification,Randomized experiments,Rubin causal model,assignment mechanism,assignment-based causal inference,direct causal effects},
-	mendeley-groups = {Current},
-	pages = {322--331},
-	title = {{Causal inference using potential outcomes: Design, modeling, decisions}},
-	volume = {100},
-	year = {2005}
+@misc{Fletcher,
+	author = {R. Fletcher},
+	title = {{Practical Methods of Optimization}},
 }
+@Book{NoceWrig06,
+  Title                    = {Numerical Optimization},
+  Author                   = {Jorge Nocedal and Stephen J. Wright},
+  Publisher                = {Springer},
+  Year                     = {2006},
+
+  Address                  = {New York, NY, USA},
+  Edition                  = {second}
+}
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@comment{KDE}
 @book{Pagan1999,
 	address = {Cambridge },
 	author = {Pagan, A. R. and Ullah, Aman.},
@@ -178,7 +170,7 @@
 	year = {2009}
 }
 @article{Gine2002,
-	abstract = {Let fn denote the usual kernel density estimator in several dimensions. It is shown that if {\{}an{\}} is a regular band sequence, K is a bounded square integrable kernel of several variables, satisfying some additional mild conditions ((K1) below), and if the data consist of an i.i.d. sample from a distribution possessing a bounded density f with respect to Lebesgue measure on Rd, then. for some absolute constant C that depends only on d. With some additional but still weak conditions, it is proved that the above sequence of normalized suprema converges a.s. to 2d f â â« K2(x) dx. Convergence of the moment generating functions is also proved. Neither of these results require f to be strictly positive. These results improve upon, and extend to several dimensions, results by Silverman [13] for univariate densities. {\textcopyright} 2002 {\'{E}}ditions scientifiques et m{\'{e}}dicales Elsevier SAS.},
+	abstract = {Let fn denote the usual kernel density estimator in several dimensions. It is shown that if {\{}an{\}} is a regular band sequence, K is a bounded square integrable kernel of several variables, satisfying some additional mild conditions ((K1) below), and if the data consist of an i.i.d. sample from a distribution possessing a bounded density f with respect to Lebesgue measure on Rd, then. for some absolute constant C that depends only on d. With some additional but still weak conditions, it is proved that the above sequence of normalized suprema converges a.s. to 2d f ∞ ∫ K2(x) dx. Convergence of the moment generating functions is also proved. Neither of these results require f to be strictly positive. These results improve upon, and extend to several dimensions, results by Silverman [13] for univariate densities. {\textcopyright} 2002 {\'{E}}ditions scientifiques et m{\'{e}}dicales Elsevier SAS.},
 	author = {Gin{\'{e}}, Evarist and Guillou, Armelle},
 	doi = {10.1016/S0246-0203(02)01128-7},
 	file = {:Users/shuping.ruan/Dropbox/constrained-optimal-regime-1/Citation/Gin{\'{e}}, Guillou{\_}2002{\_}Rates of strong uniform consistency for multivariate kernel density estimators.pdf:pdf},
@@ -277,45 +269,11 @@
 	title = {{Notes for a graduate-level course in asymptotics for statisticians}},
 	year = {2014}
 }
-@book{Nocedal1999,
-	abstract = {Despite application of cryogen spray (CS) precooling, customary treatment of port wine stain (PWS) birthmarks with a single laser pulse does not result in complete lesion blanching for a majority of patients. One obvious reason is nonselective absorption by epidermal melanin, which limits the maximal safe radiant exposure. Another possible reason for treatment failure is screening of laser light within large PWS vessels, which prevents uniform heating of the entire vessel lumen. Our aim is to identify the parameters of sequential CS cooling and laser irradiation that will allow optimal photocoagulation of various PWS blood vessels with minimal risk of epidermal thermal damage.},
-	author = {Nocedal, J and Wright, S J},
-	booktitle = {Analysis},
-	chapter = {5},
-	doi = {10.1002/lsm.21040},
-	editor = {Glynn, Peter and Robinson, Stephen M},
-	isbn = {0387987932},
-	issn = {10969101},
-	number = {2},
-	pages = {164--75},
-	pmid = {21384397},
-	publisher = {Springer},
-	series = {Springer Series in Operations Research},
-	title = {{Numerical Optimization}},
-	url = {http://www.ncbi.nlm.nih.gov/pubmed/21643320},
-	volume = {43},
-	year = {2006}
-}
-@book{fiacco,
-	author = {Anthony V. Fiacco, Garth P. McCormick},
-	title = {Nonlinear Programming: Sequential Unconstrained Minimization Techniques},
-}
-@misc{Fletcher,
-	author = {R. Fletcher},
-	title = {{Practical Methods of Optimization}},
-}
 @incollection{Linn2014a,
-	author = {Linn, Kristin A and Laber, Eric B and Stefanski, Leonard A},
+	author = {Linn, Kristin A. and Laber, Eric B. and Stefanski, Leonard A.},
 	file = {:home/sruan/Dropbox/constrained-optimal-regime-1/ReferenceIntoMed/Linn, Laber, Stefanski - 2014 - Constrained estimation for competing outcomes.pdf:pdf},
 	title = {{Constrained estimation for competing outcomes}},
 	year = {2014}
-}
-@article{Lizotte2010,
-	author = {Lizotte, DJ},
-	file = {:home/sruan/Dropbox/constrained-optimal-regime-1/ReferenceIntoMed/Lizotte, Bowling, Murphy - 2010 - Efficient reinforcement learning with multiple reward functions for randomized controlled trial analys.pdf:pdf},
-	journal = {Proceedings of the  \ldots},
-	title = {{Efficient reinforcement learning with multiple reward functions for randomized controlled trial analysis}},
-	year = {2010}
 }
 @article{Henderson2010,
 	abstract = {We consider optimal dynamic treatment regime determination in practice. Model building, checking, and comparison have had little or no attention so far in this literature. Motivated by an application on optimal dosage of anticoagulants, we propose a modeling and estimation strategy that incorporates the regret functions of Murphy (2003, Journal of the Royal Statistical Society, Series B 65, 331-366) into a regression model for observed responses. Estimation is quick and diagnostics are available, meaning a variety of candidate models can be compared. The method is illustrated using simulation and the anticoagulation application.},
@@ -452,23 +410,54 @@
 	volume = {6},
 	year = {2005}
 }
-@article{Zhang2012,
-	abstract = {A treatment regime is a rule that assigns a treatment, among a set of possible treatments, to a patient as a function of his/her observed characteristics, hence "personalizing" treatment to the patient. The goal is to identify the optimal treatment regime that, if followed by the entire population of patients, would lead to the best outcome on average. Given data from a clinical trial or observational study, for a single treatment decision, the optimal regime can be found by assuming a regression model for the expected outcome conditional on treatment and covariates, where, for a given set of covariates, the optimal treatment is the one that yields the most favorable expected outcome. However, treatment assignment via such a regime is suspect if the regression model is incorrectly specified. Recognizing that, even if misspecified, such a regression model defines a class of regimes, we instead consider finding the optimal regime within such a class by finding the regime that optimizes an estimator of overall population mean outcome. To take into account possible confounding in an observational study and to increase precision, we use a doubly robust augmented inverse probability weighted estimator for this purpose. Simulations and application to data from a breast cancer clinical trial demonstrate the performance of the method.},
-	author = {Zhang, Baqun and Tsiatis, Anastasios a. and Laber, Eric B. and Davidian, Marie},
-	doi = {10.1111/j.1541-0420.2012.01763.x},
-	file = {:home/sruan/Dropbox/constrained-optimal-regime-1/ReferenceIntoMed/Treatment regimes subgroup identification/Zhang.pdf:pdf},
-	issn = {0006341X},
-	journal = {Biometrics},
-	keywords = {Doubly robust estimator,Inverse probability weighting,Outcome regression,Personalized medicine,Potential outcomes,Propensity score},
-	mendeley-groups = {ResearchOne},
-	number = {4},
-	pages = {1010--1018},
-	pmid = {22550953},
-	title = {{A Robust Method for Estimating Optimal Treatment Regimes}},
-	volume = {68},
-	year = {2012}
+@article{Robins2000,
+abstract = {In observational studies with exposures or treatments that vary over time, standard approaches for adjustment of confounding are biased when there exist time-dependent confounders that are also affected by previous treatment. This paper introduces marginal structural models, a new class of causal models that allow for improved adjustment of confounding in those situations. The parameters of a marginal structural model can be consistently estimated using a new class of estimators, the inverse-probability-of-treatment weighted estimators.},
+author = {Robins, J M and Hern{\'{a}}n, M A and Brumback, B},
+doi = {10.1097/00001648-200009000-00011},
+isbn = {1044-3983},
+issn = {1044-3983},
+journal = {Epidemiology},
+number = {5},
+pages = {550--560},
+pmid = {10955408},
+title = {{Marginal structural models and causal inference in epidemiology.}},
+volume = {11},
+year = {2000}
 }
+@article{Zhao2015,
+abstract = {Dynamic treatment regimes (DTRs) are sequential decision rules for individual patients that can adapt over time to an evolving illness. The goal is to accommodate heterogeneity among patients and find the DTR which will produce the best long term outcome if implemented. We introduce two new statistical learning methods for estimating the optimal DTR, termed backward outcome weighted learning (BOWL), and simultaneous outcome weighted learning (SOWL). These approaches convert individualized treatment selection into an either sequential or simultaneous classification problem, and can thus be applied by modifying existing machine learning techniques. The proposed methods are based on directly maximizing over all DTRs a nonparametric estimator of the expected long-term outcome; this is fundamentally different than regression-based methods, for example Q-learning, which indirectly attempt such maximization and rely heavily on the correctness of postulated regression models. We prove that the resulting rules are consistent, and provide finite sample bounds for the errors using the estimated rules. Simulation results suggest the proposed methods produce superior DTRs compared with Q- learning especially in small samples. We illustrate the methods using data from a clinical trial for smoking cessation. Keywords},
+archivePrefix = {arXiv},
+arxivId = {15334406},
+author = {Zhao, Ying-Qi and Zeng, Donglin and Laber, Eric B. and Kosorok, Michael R.},
+doi = {10.1080/01621459.2014.937488},
+eprint = {15334406},
+isbn = {0000000000000},
+issn = {0162-1459},
+journal = {Journal of the American Statistical Association},
+number = {510},
+pages = {583--598},
+pmid = {26236062},
+title = {{New Statistical Learning Methods for Estimating Optimal Dynamic Treatment Regimes}},
+url = {http://www.tandfonline.com/doi/full/10.1080/01621459.2014.937488},
+volume = {110},
+year = {2015}
+}
+
 @article{Zhang2012,
+abstract = {A treatment regime maps observed patient characteristics to a recommended treatment. Recent technological advances have increased the quality, accessibility, and volume of patient-level data; consequently, there is a growing need for powerful and flexible estimators of an optimal treatment regime that can be used with either observational or randomized clinical trial data. We propose a novel and general framework that transforms the problem of estimating an optimal treatment regime into a classification problem wherein the optimal classifier corresponds to the optimal treatment regime. We show that commonly employed parametric and semi-parametric regression estimators, as well as recently proposed robust estimators of an optimal treatment regime can be represented as special cases within our framework. Furthermore, our approach allows any classification procedure that can accommodate case weights to be used without modification to estimate an optimal treatment regime. This introduces a wealth of new and powerful learning algorithms for use in estimating treatment regimes. We illustrate our approach using data from a breast cancer clinical trial.},
+author = {Zhang, Baqun and Tsiatis, Anastasios A. and Davidian, Marie and Zhang, Min and Laber, Eric},
+doi = {10.1002/sta.411},
+issn = {20491573},
+journal = {Stat},
+keywords = {Classification,Doubly robust estimator,Inverse probability weighting,Personalized medicine,Potential outcomes,Propensity score},
+number = {1},
+pages = {103--114},
+pmid = {23645940},
+title = {{Estimating optimal treatment regimes from a classification perspective}},
+volume = {1},
+year = {2012}
+}
+@article{Zhang2012b,
 	abstract = {A treatment regime is a rule that assigns a treatment, among a set of possible treatments, to a patient as a function of his/her observed characteristics, hence "personalizing" treatment to the patient. The goal is to identify the optimal treatment regime that, if followed by the entire population of patients, would lead to the best outcome on average. Given data from a clinical trial or observational study, for a single treatment decision, the optimal regime can be found by assuming a regression model for the expected outcome conditional on treatment and covariates, where, for a given set of covariates, the optimal treatment is the one that yields the most favorable expected outcome. However, treatment assignment via such a regime is suspect if the regression model is incorrectly specified. Recognizing that, even if misspecified, such a regression model defines a class of regimes, we instead consider finding the optimal regime within such a class by finding the regime that optimizes an estimator of overall population mean outcome. To take into account possible confounding in an observational study and to increase precision, we use a doubly robust augmented inverse probability weighted estimator for this purpose. Simulations and application to data from a breast cancer clinical trial demonstrate the performance of the method.},
 	author = {Zhang, Baqun and Tsiatis, Anastasios a. and Laber, Eric B. and Davidian, Marie},
 	doi = {10.1111/j.1541-0420.2012.01763.x},
@@ -492,7 +481,7 @@
 	year = {2014}
 }
 @article{Moodie2004,
-	abstract = {In recent years, treatment and intervention scientists increasingly realize that individual heterogeneity in disorder severity, background characteristics and co-occurring problems translates into heterogeneity in response to various aspects of any treatment program. Accordingly, research in this area is shifting from the traditional âone-size-fits-allâ treatment to dynamic treatment regimes, which allow greater individualization in programming over time. A dynamic treatment regime is a sequence of decision rules that specify how the dosage and/or type of treatment should be adjusted through time in response to an individualâs changing needs, aiming to optimize the effectiveness of the program. In the chapter we review the Sequential Multiple Assignment Randomized Trials (SMART), which is an experimental design useful for the development of dynamic treatment regimes. We compare the SMART approach with other experimental approaches and discuss data analyses methods for constructing a high quality dynamic treatment regime as well as other secondary analyses.},
+	abstract = {In recent years, treatment and intervention scientists increasingly realize that individual heterogeneity in disorder severity, background characteristics and co-occurring problems translates into heterogeneity in response to various aspects of any treatment program. Accordingly, research in this area is shifting from the traditional “one-size-fits-all” treatment to dynamic treatment regimes, which allow greater individualization in programming over time. A dynamic treatment regime is a sequence of decision rules that specify how the dosage and/or type of treatment should be adjusted through time in response to an individual’s changing needs, aiming to optimize the effectiveness of the program. In the chapter we review the Sequential Multiple Assignment Randomized Trials (SMART), which is an experimental design useful for the development of dynamic treatment regimes. We compare the SMART approach with other experimental approaches and discuss data analyses methods for constructing a high quality dynamic treatment regime as well as other secondary analyses.},
 	author = {Moodie, Erica},
 	doi = {10.1146/annurev-statistics-022513-115553},
 	file = {:home/sruan/Dropbox/constrained-optimal-regime-1/ReferenceIntoMed/Others/annurev-statistics-022513-115553.pdf:pdf},
@@ -558,7 +547,7 @@
 	mendeley-groups = {ResearchOne},
 	number = {1},
 	pages = {267--273},
-	title = {{Reader reaction to âA robust method for estimating optimal treatment regimesâ by Zhang et al. (2012)}},
+	title = {{Reader reaction to “A robust method for estimating optimal treatment regimes” by Zhang et al. (2012)}},
 	volume = {71},
 	year = {2015}
 }
@@ -684,3 +673,291 @@
 	volume = {7},
 	year = {1952}
 }
+@book{altman99cmdp,
+	title={Constrained Markov Decision Processes},
+	author={Altman, E.},
+	isbn={9780849303821},
+	lccn={99210415},
+	series={Stochastic Modeling Series},
+	url={https://books.google.com/books?id=3X9S1NM2iOgC},
+	year={1999},
+	publisher={Taylor \& Francis}
+}
+@article{Geramifard2013,
+	abstract = {A Markov Decision Process (MDP) is a natural framework for formulating sequential decision-making problems under uncertainty. In recent years, researchers have greatly advanced algorithms for learning and acting in MDPs. This article reviews such algorithms, beginning with well-known dynamic programming methods for solving MDPs such as policy iteration and value iteration, then describes approximate dynamic programming methods such as trajectory based value iteration, and finally moves to reinforcement learning methods such as Q-Learning, SARSA, and least-squares policy iteration. We describe algorithms in a unified framework, giving pseudocode together with memory and iteration complexity analysis for each. Empirical evaluations of these techniques with four representations across four domains, provide insight into how these algorithms perform with various feature sets in terms of running time and performance.{\textcopyright} 2013 A. Geramifard, T. J. Walsh, S. Tellex, G. Chowdhary.},
+	author = {Geramifard, Alborz},
+	doi = {10.1561/2200000042},
+	file = {:Users/shuping.ruan/Dropbox/rldm/reference/main-ref/linear fun approximators.pdf:pdf},
+	isbn = {9781601987617},
+	issn = {1935-8237},
+	journal = {Foundations and Trends{\textregistered} in Machine Learning},
+	mendeley-groups = {rldm},
+	number = {4},
+	pages = {375--451},
+	title = {{A Tutorial on Linear Function Approximators for Dynamic Programming and Reinforcement Learning}},
+	url = {http://www.nowpublishers.com/articles/foundations-and-trends-in-machine-learning/MAL-042},
+	volume = {6},
+	year = {2013}
+}
+@article{Luckett2016,
+	abstract = {The vision for precision medicine is to use individual patient characteristics to inform a personalized treatment plan that leads to the best healthcare possible for each patient. Mobile technologies have an important role to play in this vision as they offer a means to monitor a patient's health status in real-time and subsequently to deliver interventions if, when, and in the dose that they are needed. Dynamic treatment regimes formalize individualized treatment plans as sequences of decision rules, one per stage of clinical intervention, that map current patient information to a recommended treatment. However, existing methods for estimating optimal dynamic treatment regimes are designed for a small number of fixed decision points occurring on a coarse time-scale. We propose a new reinforcement learning method for estimating an optimal treatment regime that is applicable to data collected using mobile technologies in an outpatient setting. The proposed method accommodates an indefinite time horizon and minute-by-minute decision making that are common in mobile health applications. We show the proposed estimators are consistent and asymptotically normal under mild conditions. The proposed methods are applied to estimate an optimal dynamic treatment regime for controlling blood glucose levels in patients with type 1 diabetes.},
+	archivePrefix = {arXiv},
+	arxivId = {1611.03531},
+	author = {Luckett, Daniel J. and Laber, Eric B. and Kahkoska, Anna R. and Maahs, David M. and Mayer-Davis, Elizabeth and Kosorok, Michael R.},
+	eprint = {1611.03531},
+	file = {:Users/shuping.ruan/Dropbox/rldm/reference/main-ref/vlearn.pdf:pdf},
+	mendeley-groups = {rldm},
+	title = {{Estimating Dynamic Treatment Regimes in Mobile Health Using V-learning}},
+	url = {http://arxiv.org/abs/1611.03531},
+	year = {2016}
+}
+@article{Ertefaie2014,
+	abstract = {The application of existing methods for constructing optimal dynamic treatment regimes is limited to cases where investigators are interested in optimizing a utility function over a fixed period of time (finite horizon). In this manuscript, we develop an inferential procedure based on temporal difference residuals for optimal dynamic treatment regimes in infinite-horizon settings, where there is no a priori fixed end of follow-up point. The proposed method can be used to determine the optimal regime in chronic diseases where patients are monitored and treated throughout their life. We derive large sample results necessary for conducting inference. We also simulate a cohort of patients with diabetes to mimic the third wave of the National Health and Nutrition Examination Survey, and we examine the performance of the proposed method in controlling the level of hemoglobin A1c. Supplementary materials for this article are available online.},
+	archivePrefix = {arXiv},
+	arxivId = {1406.0764},
+	author = {Ertefaie, Ashkan},
+	eprint = {1406.0764},
+	file = {:Users/shuping.ruan/Dropbox/rldm/reference/main-ref/infinite horizon.pdf:pdf},
+	keywords = {action-value function,backward induction,causal inference,temporal dif-},
+	mendeley-groups = {rldm},
+	pages = {1--39},
+	title = {{Constructing Dynamic Treatment Regimes in Infinite-Horizon Settings}},
+	url = {http://arxiv.org/abs/1406.0764},
+	year = {2014}
+}
+@article{blatt2004learning,
+	title={A-learning for approximate planning},
+	author={Blatt, D and Murphy, SA and Zhu, J},
+	journal={Ann Arbor},
+	volume={1001},
+	pages={48109--2122},
+	year={2004}
+}
+@article{Lizotte2012,
+	abstract = {We present a general and detailed development of an algorithm for finite-horizon fitted-Q iteration with an arbitrary number of reward signals and linear value function approximation using an ar-bitrary number of state features. This includes a detailed treatment of the 3-reward function case using triangulation primitives from computational geometry and a method for identifying globally dominated actions. We also present an example of how our methods can be used to construct a real-world decision aid by considering symptom reduction, weight gain, and quality of life in sequential treatments for schizophrenia. Finally, we discuss future directions in which to take this work that will further enable our methods to make a positive impact on the field of evidence-based clinical decision support.},
+	author = {Lizotte, Daniel J. and {Bowling}, Michael H. and {Murphy}, Susan A.},
+	isbn = {9781577356097},
+	issn = {1532-4435},
+	journal = {Journal of Machine Learning Research},
+	keywords = {decision making,dynamic programming,linear regression,preference elicitation,reinforcement learning},
+	pages = {3253--3295},
+	pmid = {23741197},
+	title = {{Linear Fitted-Q Iteration with Multiple Reward Functions}},
+	volume = {13},
+	year = {2012}
+}
+@article{Lizotte2010,
+	abstract = {We introduce new, efficient algorithms for value iteration with multiple reward functions and continuous state. We also give an algorithm for finding the set of all non-dominated actions in the continuous state setting. This novel extension is appropriate for environments with continuous or finely discretized states where generalization is required, as is the case for data analysis of randomized controlled trials. Copyright 2010 by the author(s)/owner(s).},
+	author = {Lizotte, Daniel J and Bowling, Michael H. and Murphy, Susan A.},
+	isbn = {9781605589077},
+	journal = {in Proc. of Int. Conf. on Machine Learning},
+	pages = {695--702},
+	title = {{Efficient reinforcement learning with multiple reward functions for randomized controlled trial analysis}},
+	year = {2010}
+}
+@article{Lizotte2016,
+	author = {Lizotte, Daniel J. and Laber, Eric B.},
+	title = {Multi-objective Markov Decision Processes for Data-driven Decision Support},
+	journal = {J. Mach. Learn. Res.},
+	issue_date = {January 2016},
+	volume = {17},
+	number = {1},
+	month = jan,
+	year = {2016},
+	issn = {1532-4435},
+	pages = {7378--7405},
+	numpages = {28},
+	url = {http://dl.acm.org/citation.cfm?id=2946645.3053492},
+	acmid = {3053492},
+	publisher = {JMLR.org},
+	keywords = {Markov decision processes, clinical decision support, evidence-based medicine, multi-objective optimization, reinforcement learning},
+} 
+@article{Murphy2016,
+	abstract = {We develop an off-policy actor-critic algorithm for learning an optimal policy from a training set composed of data from multiple individuals. This algorithm is developed with a view towards its use in mobile health.},
+	archivePrefix = {arXiv},
+	arxivId = {1607.05047},
+	author = {Murphy, S A and Deng, Y and Laber, E B and Maei, H R and Sutton, R S and Witkiewitz, K.},
+	eprint = {1607.05047},
+	journal = {arXiv},
+	pages = {1--18},
+	title = {{A Batch, Off-Policy, Actor-Critic Algorithm for Optimizing the Average Reward}},
+	url = {http://arxiv.org/abs/1607.05047},
+	year = {2016}
+}
+@article{Luckett2016,
+	abstract = {The vision for precision medicine is to use individual patient characteristics to inform a personalized treatment plan that leads to the best healthcare possible for each patient. Mobile technologies have an important role to play in this vision as they offer a means to monitor a patient's health status in real-time and subsequently to deliver interventions if, when, and in the dose that they are needed. Dynamic treatment regimes formalize individualized treatment plans as sequences of decision rules, one per stage of clinical intervention, that map current patient information to a recommended treatment. However, existing methods for estimating optimal dynamic treatment regimes are designed for a small number of fixed decision points occurring on a coarse time-scale. We propose a new reinforcement learning method for estimating an optimal treatment regime that is applicable to data collected using mobile technologies in an outpatient setting. The proposed method accommodates an indefinite time horizon and minute-by-minute decision making that are common in mobile health applications. We show the proposed estimators are consistent and asymptotically normal under mild conditions. The proposed methods are applied to estimate an optimal dynamic treatment regime for controlling blood glucose levels in patients with type 1 diabetes.},
+	archivePrefix = {arXiv},
+	arxivId = {1611.03531},
+	author = {Luckett, Daniel J. and Laber, Eric B. and Kahkoska, Anna R. and Maahs, David M. and Mayer-Davis, Elizabeth and Kosorok, Michael R.},
+	eprint = {1611.03531},
+	file = {:Users/shuping.ruan/Dropbox/rldm/reference/main-ref/vlearn.pdf:pdf},
+	mendeley-groups = {rldm},
+	title = {{Estimating Dynamic Treatment Regimes in Mobile Health Using V-learning}},
+	url = {http://arxiv.org/abs/1611.03531},
+	year = {2016}
+}
+@article{Achiam2017,
+	abstract = {For many applications of reinforcement learn-ing it can be more convenient to specify both a reward function and constraints, rather than trying to design behavior through the reward function. For example, systems that physically interact with or around humans should satisfy safety constraints. Recent advances in policy search algorithms (Mnih et al., 2016; Schulman et al., 2015; Lillicrap et al., 2016; Levine et al., 2016) have enabled new capabilities in high-dimensional control, but do not consider the con-strained setting. We propose Constrained Policy Optimization (CPO), the first general-purpose policy search al-gorithm for constrained reinforcement learning with guarantees for near-constraint satisfaction at each iteration. Our method allows us to train neu-ral network policies for high-dimensional control while making guarantees about policy behavior all throughout training. Our guarantees are based on a new theoretical result, which is of indepen-dent interest: we prove a bound relating the ex-pected returns of two policies to an average diver-gence between them. We demonstrate the effec-tiveness of our approach on simulated robot lo-comotion tasks where the agent must satisfy con-straints motivated by safety.},
+	archivePrefix = {arXiv},
+	arxivId = {1705.10528},
+	author = {Achiam, Joshua and Held, David and Tamar, Aviv and Abbeel, Pieter},
+	eprint = {1705.10528},
+	issn = {1938-7228},
+	journal = {Proceedings of the 34th International Conference on Machine Learning},
+	title = {{Constrained Policy Optimization}},
+	url = {https://arxiv.org/pdf/1705.10528.pdf},
+	year = {2017}
+}
+@article{Lei2012,
+	abstract = {Interventions often involve a sequence of decisions. For example, clinicians frequently adapt the intervention to an individual's outcomes. Altering the intensity and type of intervention over time is crucial for many reasons, such as to obtain improvement if the individual is not responding or to reduce costs and burden when intensive treatment is no longer necessary. Adaptive interventions utilize individual variables (severity, preferences) to adapt the intervention and then dynamically utilize individual outcomes (response to treatment, adherence) to readapt the intervention. The Sequential Multiple Assignment Randomized Trial (SMART) provides high-quality data that can be used to construct adaptive interventions. We review the SMART and highlight its advantages in constructing and revising adaptive interventions as compared to alternative experimental designs. Selected examples of SMART studies are described and compared. A data analysis method is provided and illustrated using data from the Extending Treatment Effectiveness of Naltrexone SMART study.},
+	author = {Lei, H. and Nahum-Shani, I. and Lynch, K. and Oslin, D. and Murphy, S.A.},
+	doi = {10.1146/annurev-clinpsy-032511-143152},
+	issn = {1548-5943},
+	journal = {Annual Review of Clinical Psychology},
+	number = {1},
+	pages = {21--48},
+	pmid = {22224838},
+	title = {{A "SMART" Design for Building Individualized Treatment Sequences}},
+	url = {http://www.ncbi.nlm.nih.gov/pubmed/22224838{\%}5Cnhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC3887122{\%}5Cnhttp://www.annualreviews.org/doi/10.1146/annurev-clinpsy-032511-143152},
+	volume = {8},
+	year = {2012}
+}
+@article{Gill2001,
+	abstract = {We extend Robins' theory of causal inference for complex longitudinal data to the case of continuously varying as opposed to discrete covariates and treatments. In particular we establish versions of the key results of the discrete theory: the g-computation formula and a collection of powerful characterizations of the g-null hypothesis of no treatment effect. This is accomplished under natural continuity hypotheses concerning the conditional distributions of the outcome variable and of the covariates given the past. We also show that our assumptions concerning counterfactual variables place no restriction on the joint distribution of the observed variables: thus in a precise sense, these assumptions are "for free," or if you prefer, harmless. CR - Copyright {\&}{\#}169; 2001 Institute of Mathematical Statistics},
+	author = {Gill, Richard D. and Robins, James M.},
+	doi = {10.1214/aos/1015345962},
+	isbn = {0090-5364},
+	issn = {00905364},
+	journal = {Annals of Statistics},
+	keywords = {Causality,Counterfactuals,Longitudinal data,Observational studies},
+	number = {6},
+	pages = {1785--1811},
+	title = {{Causal inference for complex longitudinal data: The continuous case}},
+	volume = {29},
+	year = {2001}
+}
+@article{constrained,
+	abstract = {...},
+	author = {Linn KA and  Laber EB and Stefanski LA},
+	doi = {doi:10.1214/aos/1015345962},
+	journal = {Chapter in Adaptive Treatment Strategies In Practice, ASA-SIAM Statistics and Applied Probability Series, 2015},
+	title = {Constrained estimation for competing outcomes},
+	volume = {29},
+	year = {2001}
+}
+@article{Chakraborty2014,
+	abstract = {A dynamic treatment regime consists of a sequence of decision rules, one per stage of intervention, that dictate how to individualize treatments to patients based on evolving treatment and covariate history. These regimes are particularly useful for managing chronic disorders, and fit well into the larger paradigm of personalized medicine. They provide one way to operationalize a clinical decision support system. Statistics plays a key role in the construction of evidence-based dynamic treatment regimes - informing best study design as well as efficient estimation and valid inference. Due to the many novel methodological challenges it offers, this area has been growing in popularity among statisticians in recent years. In this article, we review the key developments in this exciting field of research. In particular, we discuss the sequential multiple assignment randomized trial designs, estimation techniques like Q-learning and marginal structural models, and several inference techniques designed to address the associated non-standard asymptotics. We reference software, whenever available. We also outline some important future directions.},
+	archivePrefix = {arXiv},
+	arxivId = {NIHMS150003},
+	author = {Chakraborty, Bibhas and Murphy, Susan A.},
+	doi = {10.1146/annurev-statistics-022513-115553},
+	eprint = {NIHMS150003},
+	isbn = {8015815967},
+	issn = {2326-8298},
+	journal = {Annual Review of Statistics and Its Application},
+	number = {1},
+	pages = {447--464},
+	pmid = {21959306},
+	title = {{Dynamic Treatment Regimes}},
+	url = {http://www.annualreviews.org/doi/10.1146/annurev-statistics-022513-115553},
+	volume = {1},
+	year = {2014}
+}
+@article{Nahum2012,
+	abstract = {Increasing interest in individualizing and adapting intervention services over time has led to the development of adaptive interventions. Adaptive interventions operationalize the individualization of a sequence of intervention options over time via the use of decision rules that input participant information and output intervention recommendations. We introduce Q-learning, which is a generalization of regression analysis to settings in which a sequence of decisions regarding intervention options or services is made. The use of Q is to indicate that this method is used to assess the relative quality of the intervention options. In particular, we use Q-learning with linear regression to estimate the optimal (i.e., most effective) sequence of decision rules. We illustrate how Q-learning can be used with data from sequential multiple assignment randomized trials (SMARTs; Murphy, 2005) to inform the construction of a more deeply tailored sequence of decision rules than those embedded in the SMART design. We also discuss the advantages of Q-learning compared to other data analysis approaches. Finally, we use the Adaptive Interventions for Children With ADHD SMART study (Center for Children and Families, University at Buffalo, State University of New York, William E. Pelham as principal investigator) for illustration.},
+	archivePrefix = {arXiv},
+	arxivId = {NIHMS150003},
+	author = {Nahum-Shani, Inbal and Qian, Min and Almirall, Daniel and Pelham, William E. and Gnagy, Beth and Fabiano, Gregory A. and Waxmonsky, James G. and Yu, Jihnhee and Murphy, Susan A.},
+	doi = {10.1037/a0029373},
+	eprint = {NIHMS150003},
+	isbn = {1939-1463 (Electronic)$\backslash$r1082-989X (Linking)},
+	issn = {1939-1463},
+	journal = {Psychological Methods},
+	number = {4},
+	pages = {478--494},
+	pmid = {23025434},
+	title = {{Q-learning: A data analysis method for constructing adaptive interventions.}},
+	url = {http://doi.apa.org/getdoi.cfm?doi=10.1037/a0029373},
+	volume = {17},
+	year = {2012}
+}
+@article{Schulte2014,
+	abstract = {In clinical practice, physicians make a series of treatment decisions over the course of a patient's disease based on his/her baseline and evolving characteristics. A dynamic treatment regime is a set of sequential decision rules that operationalizes this process. Each rule corresponds to a decision point and dictates the next treatment action based on the accrued information. Using existing data, a key goal is estimating the optimal regime, that, if followed by the patient population, would yield the most favorable outcome on average. Q- and A-learning are two main approaches for this purpose. We provide a detailed account of these methods, study their performance, and illustrate them using data from a depression study.},
+	archivePrefix = {arXiv},
+	arxivId = {arXiv:1202.4177v3},
+	author = {Schulte, Phillip J. and Tsiatis, Anastasios A. and Laber, Eric B. and Davidian, Marie},
+	doi = {10.1214/13-STS450},
+	eprint = {arXiv:1202.4177v3},
+	isbn = {3143627344},
+	issn = {0883-4237},
+	journal = {Statistical Science},
+	number = {4},
+	pages = {640--661},
+	pmid = {25620840},
+	title = {{Q- and A-Learning Methods for Estimating Optimal Dynamic Treatment Regimes}},
+	url = {http://projecteuclid.org/euclid.ss/1421330551},
+	volume = {29},
+	year = {2014}
+}
+@article{gestimation,
+	ISSN = {10443983},
+	URL = {http://www.jstor.org/stable/3702734},
+	abstract = {AIDS Clinical Trial Group Randomized Trial 002 compared the effect of high-dose with low-dose 3-azido-3-deoxythymidine (AZT) on the survival of AIDS patients. Embedded within the trial was an essentially uncontrolled observational study of the effect of prophylaxis therapy for pneumocystis carinii pneumonia on survival. In this paper, we estimate the causal effect of prophylaxis therapy on survival by using the method of G-estimation to estimate the parameters of a structural nested failure time model (SNFTM). Our SNFTM relates a subject's observed time of death and observed prophylaxis history to the time the subject would have died if, possibly contrary to fact, prophylaxis therapy had been withheld. We find that, under our assumptions, the data are consistent with prophylaxis therapy increasing survival by 16% or decreasing survival by 18% at the α = 0.05 level. The analytic approach proposed in this paper will be necessary to control bias in any epidemiologic study in which there exists a time-dependent risk factor for death, such as pneumocystis carinii pneumonia history, that (A1) influences subsequent exposure to the agent under study, for example, prophylaxis therapy, and (A2) is itself influenced by past exposure to the study agent. Conditions A1 and A2 will be true whenever there exists a time-dependent risk factor that is simultaneously a confounder and an intermediate variable.},
+	author = {James M. Robins and Donald Blevins and Grant Ritter and Michael Wulfsohn},
+	journal = {Epidemiology},
+	number = {4},
+	pages = {319-336},
+	publisher = {Lippincott Williams & Wilkins},
+	title = {G-Estimation of the Effect of Prophylaxis Therapy for Pneumocystis carinii Pneumonia on the Survival of AIDS Patients},
+	volume = {3},
+	year = {1992}
+}
+@article{Rubin2005,
+abstract = {Causal effects are defined as comparisons of potential outcomes under different treatments on a common set of units. Observed values of the potential outcomes are revealed by the assignment mechanism?a probabilistic model for the treatment each unit receives as a function of covariates and potential outcomes. Fisher made tremendous contributions to causal inference through his work on the design of randomized experiments, but the potential outcomes perspective applies to other complex experiments and nonrandomized studies as well. As noted by Kempthorne in his 1976 discussion of Savage's Fisher lecture, Fisher never bridged his work on experimental design and his work on parametric modeling, a bridge that appears nearly automatic with an appropriate view of the potential outcomes framework, where the potential outcomes and covariates are given a Bayesian distribution to complete the model specification. Also, this framework crisply separates scientific inference for causal effects and decisions based on such inference, a distinction evident in Fisher's discussion of tests of significance versus tests in an accept/reject framework. But Fisher never used the potential outcomes framework, originally proposed by Neyman in the context of randomized experiments, and as a result he provided generally flawed advice concerning the use of the analysis of covariance to adjust for posttreatment concomitants in randomized trials.},
+author = {Rubin, Donald B.},
+doi = {10.1198/01621450400000188O},
+isbn = {01621459},
+issn = {0162-1459},
+journal = {Journal of the American Statistical Association},
+keywords = {Analysis fo covariance,Baysian inference,Fieller-Creasy,Fischer,Neyman,Observational studies,Principle stratification,Randomized experiments,Rubin causal model,assignment mechanism,assignment-based causal inference,direct causal effects},
+number = {469},
+pages = {322--331},
+title = {{Causal inference using potential outcomes: Design, modeling, decisions}},
+volume = {100},
+year = {2005}
+}
+@article{Ventola2014,
+abstract = {Health care professionals' use of mobile devices is transforming clinical practice. Numerous medical software applications can now help with tasks ranging from information and time management to clinical decision-making at the point of care.},
+author = {Ventola, C Lee},
+isbn = {1052-1372 (Print)$\backslash$r1052-1372 (Linking)},
+issn = {1052-1372},
+journal = {P {\&} T : a peer-reviewed journal for formulary management},
+number = {5},
+pages = {356--64},
+pmid = {24883008},
+title = {{Mobile devices and apps for health care professionals: uses and benefits.}},
+volume = {39},
+year = {2014}
+}
+@@@@@@@
+@article{Neyman,
+abstract = {In the portion of the paper translated here, Neyman introduces a model for the analysis of field experiments conducted for the purpose of comparing a number of crop varieties, which makes use of a double-indexed array of unknown potential yields, one index corresponding to varieties and the other to plots. The yield corresponding to only one variety will be observed on any given plot, but through an urn model embodying sampling without replacement from this doubly indexed array, Neyman obtains a formula for the variance of the difference between the averages of the observed yields of two varieties. This variance involves the variance over all plots of the potential yields and the correlation coefficient r between the potential yields of the two varieties on the same plot. Since it is impossible to estimate r directly, Neyman advises taking r=1, observing that in practice this may lead to using too large an estimated standard deviation, when comparing two variety means.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1011.1669v3},
+author = {{Jerzy Splawa-Neyman, D. M. Dabrowska}, and T. P. Speed},
+doi = {10.1214/ss/1177012032},
+eprint = {arXiv:1011.1669v3},
+isbn = {08834237},
+issn = {0883-4237},
+journal = {Statistical Science},
+number = {4},
+pages = {465--472},
+pmid = {20948974},
+title = {{On the Application of Probability Theory to Agricultural Experiments. Essay on Principles. Section 9}},
+volume = {5},
+year = {1990}
+}
+
+
+
+
