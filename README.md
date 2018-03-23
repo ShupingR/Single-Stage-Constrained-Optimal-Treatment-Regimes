@@ -12,4 +12,4 @@ plot_results: plots for simulation summary
 
 paper: paper draft
 
-### paper draft link: https://github.com/ShupingR/Single-Stage-Constrained-Optimal-Treatment-Regimes/blob/master/paper/single_stage.pdf
+
